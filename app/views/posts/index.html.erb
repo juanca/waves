@@ -4,12 +4,12 @@
 
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
-
-<div class="posts__index__list" id="posts">
+<ul aria-label="Posts" class="posts__index__list" id="posts">
   <% @posts.each do |post| %>
-    <%= render post %>
+    <li aria-label="<%= "Post #{post.id}" %>">
+      <%= render post %>
+    </li>
   <% end %>
-</div>
+</ul>
 
 <%= link_to "New post", new_post_path %>
