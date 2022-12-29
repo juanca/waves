@@ -2,10 +2,14 @@
   <%= stylesheet_link_tag "posts/post", "data-turbo-track": "reload" %>
 <% end %>
 
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Message:</strong>
+<div class="posts__post__container" id="<%= dom_id post %>">
+  <%= button_to post, form_class: 'posts__post__show_link', method: :get do %>
+    <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
+      <title>Show this post</title>
+      <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+    </svg>
+  <% end %>
+  <p class="posts__post__message">
     <%= post.message %>
   </p>
-
 </div>

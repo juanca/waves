@@ -1,0 +1,19 @@
+.posts__post__container {
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 20%);
+  display: grid;
+  grid-template-areas:
+    ". show_link"
+    "message message"
+    ". .";
+  grid-template-columns: 1fr auto;
+  width: 50ch;
+}
+
+.posts__post__show_link {
+  grid-area: show_link;
+}
+
+.posts__post__message {
+  grid-area: message;
+}

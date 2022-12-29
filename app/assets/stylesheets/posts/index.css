@@ -1,0 +1,6 @@
+.posts__index__list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
