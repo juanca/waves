@@ -2,3 +2,8 @@ button {
   align-items: center;
   display: inline-flex;
 }
+
+main {
+  margin: auto;
+  width: fit-content;
+}

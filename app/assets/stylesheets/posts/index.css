@@ -1,8 +1,3 @@
-.posts__index__list_container {
-  margin: auto;
-  width: fit-content;
-}
-
 .posts__index__list {
   align-items: center;
   display: flex;
