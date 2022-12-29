@@ -3,6 +3,9 @@
 <% end %>
 
 <div class="posts__post__container" id="<%= dom_id post %>">
+  <span class="posts__post__date">
+    <%= post.created_at %>
+  </span>
   <%= button_to post, form_class: 'posts__post__show_link', method: :get do %>
     <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
       <title>Show this post</title>
