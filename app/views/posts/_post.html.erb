@@ -1,3 +1,7 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "posts/post", "data-turbo-track": "reload" %>
+<% end %>
+
 <div id="<%= dom_id post %>">
   <p>
     <strong>Message:</strong>
