@@ -3,10 +3,10 @@
   box-shadow: 0 3px 15px rgba(0, 0, 0, 20%);
   display: grid;
   grid-template-areas:
-    "date show_link"
-    "message message"
-    ". .";
-  grid-template-columns: 1fr auto;
+    "date show edit delete"
+    "message message message message"
+    ". . . .";
+  grid-template-columns: 1fr auto auto;
   width: 50ch;
 }
 
@@ -16,9 +16,16 @@
   grid-area: date;
 }
 
-
 .posts__post__show_link {
-  grid-area: show_link;
+  grid-area: show;
+}
+
+.posts__post__edit_link {
+  grid-area: edit;
+}
+
+.posts__post__delete_link {
+  grid-area: delete;
 }
 
 .posts__post__message {
