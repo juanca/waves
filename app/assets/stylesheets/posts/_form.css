@@ -1,0 +1,34 @@
+.posts__post__container {
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 20%);
+  display: grid;
+  grid-template-areas:
+    "date show edit delete"
+    "message message message message"
+    ". . . .";
+  grid-template-columns: 1fr auto auto;
+  width: 50ch;
+}
+
+.posts__post__date {
+  align-items: center;
+  display: flex;
+  grid-area: date;
+}
+
+.posts__post__show_link {
+  grid-area: show;
+}
+
+.posts__post__edit_link {
+  grid-area: edit;
+}
+
+.posts__post__delete_link {
+  grid-area: delete;
+}
+
+.posts__post__message {
+  grid-area: message;
+  resize: none;
+}
