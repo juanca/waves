@@ -2,8 +2,8 @@
   border: 1px solid black;
   display: grid;
   grid-template-areas:
-    "date"
-    "message";
+    "date delete"
+    "message message";
   grid-template-columns: 1fr auto;
   width: 50ch;
 }
@@ -13,6 +13,10 @@
   display: flex;
   grid-area: date;
   padding-left: 0.5rem;
+}
+
+.comments__comment__delete_link {
+  grid-area: delete;
 }
 
 .comments__comment__message {
