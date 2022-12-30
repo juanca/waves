@@ -38,10 +38,10 @@
       </svg>
     <% end %>
   <% end %>
-  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__post__message", form: "edit-post-form" %>
+  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__post__message", form: "post-form" %>
 </div>
 
-<%= form_with(id: "edit-post-form", model: post) do |form| %>
+<%= form_with(id: "post-form", model: post) do |form| %>
   <div>
     <%= form.submit %>
   </div>
