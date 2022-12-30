@@ -1,4 +1,12 @@
-<p>
-  <strong>Comment:</strong>
-  <%= comment.message %>
-</p>
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "comments/_comment", "data-turbo-track": "reload" %>
+<% end %>
+
+<div class="comments__comment__container">
+  <span class="comments__comment__date">
+    <%= comment.created_at %>
+  </span>
+  <p class="comments__comment__message">
+    <%= comment.message %>
+  </p>
+</div>

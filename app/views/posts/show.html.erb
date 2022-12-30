@@ -4,8 +4,17 @@
 
 <%= render @post %>
 
-<h2>Comments</h2>
-<%= render @post.comments %>
+<h2 class="post__post__comments_heading">
+  Comments
+</h2>
+<ol class="post__post__comments">
+  <% @post.comments.each do |comment| %>
+    <li aria-label="<%= "Comment #{comment.id}" %>">
+      <%= render comment %>
+    </li>
+  <% end %>
+
+</ol>
 
 <h2>Post a Comment</h2>
 <%= render "comments/form" %>

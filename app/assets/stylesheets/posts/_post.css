@@ -1,6 +1,6 @@
 .posts__post__container {
-  border-radius: 5px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 20%);
+  border: 1px solid black;
+  border-radius: 5px 5px 0 0;
   display: grid;
   grid-template-areas:
     "date show edit delete"
@@ -14,6 +14,7 @@
   align-items: center;
   display: flex;
   grid-area: date;
+  padding-left: 0.5rem;
 }
 
 .posts__post__show_link {
@@ -30,4 +31,19 @@
 
 .posts__post__message {
   grid-area: message;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.post__post__comments_heading {
+  border: 1px solid black;
+  font-size: unset;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.post__post__comments {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

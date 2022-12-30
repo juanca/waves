@@ -1,0 +1,22 @@
+.comments__comment__container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-areas:
+    "date"
+    "message";
+  grid-template-columns: 1fr auto;
+  width: 50ch;
+}
+
+.comments__comment__date {
+  align-items: center;
+  display: flex;
+  grid-area: date;
+  padding-left: 0.5rem;
+}
+
+.comments__comment__message {
+  grid-area: message;
+  margin: 0;
+  padding: 0.5rem;
+}
