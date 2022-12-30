@@ -10,6 +10,11 @@ class PostsController < ApplicationController
   def show
   end
 
+  def preview
+    @post = Post.new(post_params)
+    @post.created_at = DateTime.now
+  end
+
   # GET /posts/new
   def new
     @post = Post.new
