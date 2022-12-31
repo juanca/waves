@@ -5,7 +5,7 @@
   grid-template-areas:
     "date show edit delete"
     "message message message message"
-    ". . . .";
+    "comments comments comments comments";
   grid-template-columns: 1fr auto auto;
   width: 50ch;
 }
@@ -33,6 +33,12 @@
   grid-area: message;
   margin: 0;
   padding: 0.5rem;
+}
+
+.posts__post__comments {
+  border-top: 1px solid rgba(0, 0, 0, 20%);
+  grid-area: comments;
+  padding: 0 0.5rem;
 }
 
 .post__post__comments_heading {

@@ -4,9 +4,6 @@
 
 <%= render @post %>
 
-<h2 class="post__post__comments_heading">
-  Comments
-</h2>
 <ol class="post__post__comments">
   <% @post.comments.each do |comment| %>
     <li aria-label="<%= "Comment #{comment.id}" %>">
