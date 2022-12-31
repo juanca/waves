@@ -15,6 +15,7 @@
   align-items: center;
   display: flex;
   grid-area: date;
+  padding-left: 0.5rem;
 }
 
 .posts__form__show_link {
@@ -30,6 +31,11 @@
 }
 
 .posts__form__message {
+  border: none;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  font: unset;
   grid-area: message;
+  padding: 0.5rem;
   resize: none;
 }

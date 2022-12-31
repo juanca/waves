@@ -26,7 +26,7 @@
       </svg>
     <% end %>
   <% end %>
-  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__form__message", form: "post-form" %>
+  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__form__message", form: "post-form", oninput: "this.style.height = `${this.scrollHeight}px`" %>
 </div>
 
 <%= form_with(id: "post-form", model: post) do |form| %>
