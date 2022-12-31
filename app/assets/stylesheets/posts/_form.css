@@ -32,7 +32,7 @@
 
 .posts__form__message {
   border: none;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
   box-sizing: border-box;
   font: unset;
   grid-area: message;
