@@ -14,19 +14,19 @@
   </div>
 <% end %>
 
-<div class="posts__post__container" id="<%= dom_id post %>">
-  <span class="posts__post__date">
+<div class="posts__form__container" id="<%= dom_id post %>">
+  <span class="posts__form__date">
     <%= post.created_at %>
   </span>
   <% unless post.new_record? %>
-    <%= button_to post, form: { role: :presentation }, form_class: "posts__post__delete_link", method: :delete do %>
+    <%= button_to post, form: { role: :presentation }, form_class: "posts__form__delete_link", method: :delete do %>
       <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
         <title>Delete this post</title>
         <path d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />
       </svg>
     <% end %>
   <% end %>
-  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__post__message", form: "post-form" %>
+  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__form__message", form: "post-form" %>
 </div>
 
 <%= form_with(id: "post-form", model: post) do |form| %>

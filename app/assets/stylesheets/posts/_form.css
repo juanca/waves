@@ -1,4 +1,4 @@
-.posts__post__container {
+.posts__form__container {
   border: 1px solid black;
   border-radius: 5px;
   display: grid;
@@ -11,25 +11,25 @@
   width: 50ch;
 }
 
-.posts__post__date {
+.posts__form__date {
   align-items: center;
   display: flex;
   grid-area: date;
 }
 
-.posts__post__show_link {
+.posts__form__show_link {
   grid-area: show;
 }
 
-.posts__post__edit_link {
+.posts__form__edit_link {
   grid-area: edit;
 }
 
-.posts__post__delete_link {
+.posts__form__delete_link {
   grid-area: delete;
 }
 
-.posts__post__message {
+.posts__form__message {
   grid-area: message;
   resize: none;
 }
