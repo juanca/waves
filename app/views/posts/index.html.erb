@@ -11,9 +11,9 @@
   Compose Post
 <% end %>
 
-<ul aria-label="Posts" class="posts__index__list" id="posts">
+<ul aria-label="Posts" class="posts__index__posts" id="posts">
   <% @posts.each do |post| %>
-    <li aria-label="<%= "Post #{post.id}" %>">
+    <li aria-label="<%= "Post #{post.id}" %>" class="posts__index__post">
       <%= render post %>
     </li>
   <% end %>

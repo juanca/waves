@@ -1,6 +1,4 @@
 .posts__post__container {
-  border: 1px solid black;
-  border-radius: 5px 5px 0 0;
   display: grid;
   grid-template-areas:
     "date show edit delete"

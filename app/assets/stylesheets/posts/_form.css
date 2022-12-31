@@ -1,12 +1,13 @@
 .posts__post__container {
+  border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 20%);
   display: grid;
   grid-template-areas:
     "date show edit delete"
     "message message message message"
     ". . . .";
   grid-template-columns: 1fr auto auto;
+  margin: 0.5rem 0;
   width: 50ch;
 }
 

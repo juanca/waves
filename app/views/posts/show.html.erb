@@ -6,7 +6,9 @@
 
 <%= link_to "Back to posts", posts_path %>
 
-<%= render @post %>
+<div class="posts__show__post">
+  <%= render @post %>
+</div>
 
 <ol class="posts__show__comments">
   <% @post.comments.each do |comment| %>

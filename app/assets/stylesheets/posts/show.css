@@ -1,3 +1,8 @@
+.posts__show__post {
+  border: 1px solid black;
+  border-radius: 5px 5px 0 0;
+}
+
 .posts__show__comments {
   list-style-type: none;
   margin: 0;
