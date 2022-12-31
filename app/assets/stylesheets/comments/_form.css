@@ -1,0 +1,9 @@
+.comments__form__container {
+ padding: 0.5rem;
+}
+
+.comments__form__message {
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+}

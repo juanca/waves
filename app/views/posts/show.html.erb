@@ -1,3 +1,7 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "posts/show", "data-turbo-track": "reload" %>
+<% end %>
+
 <p style="color: green"><%= notice %></p>
 
 <%= link_to "Back to posts", posts_path %>
@@ -10,8 +14,8 @@
       <%= render comment %>
     </li>
   <% end %>
-
 </ol>
 
-<h2>Post a Comment</h2>
-<%= render "comments/form" %>
+<div class="post__show__comment_form">
+  <%= render "comments/form" %>
+</div>
