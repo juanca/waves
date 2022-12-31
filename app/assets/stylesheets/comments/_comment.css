@@ -1,5 +1,4 @@
 .comments__comment__container {
-  border: 1px solid black;
   display: grid;
   grid-template-areas:
     "date delete"

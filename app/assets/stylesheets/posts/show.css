@@ -1,4 +1,16 @@
-.post__show__comment_form {
+.posts__show__comments {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts__show__comment {
+  border-color: rgba(0, 0, 0, 20%) black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.posts__show__comment_form {
   border: 1px solid black;
   border-radius: 0 0 5px 5px;
 }

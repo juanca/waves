@@ -8,14 +8,14 @@
 
 <%= render @post %>
 
-<ol class="post__post__comments">
+<ol class="posts__show__comments">
   <% @post.comments.each do |comment| %>
-    <li aria-label="<%= "Comment #{comment.id}" %>">
+    <li aria-label="<%= "Comment #{comment.id}" %>" class="posts__show__comment">
       <%= render comment %>
     </li>
   <% end %>
 </ol>
 
-<div class="post__show__comment_form">
+<div class="posts__show__comment_form">
   <%= render "comments/form" %>
 </div>
