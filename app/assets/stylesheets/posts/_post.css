@@ -40,10 +40,3 @@
   grid-area: comments;
   padding: 0 0.5rem;
 }
-
-.post__post__comments_heading {
-  border: 1px solid black;
-  font-size: unset;
-  margin: 0;
-  padding: 0.5rem;
-}
