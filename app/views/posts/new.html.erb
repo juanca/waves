@@ -1,3 +1,10 @@
-<%= link_to "Back to posts", posts_path %>
+<p style="color: green"><%= notice %></p>
+
+<%= button_to posts_path, form: { role: :presentation }, method: :get do %>
+  <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+  </svg>
+  Back
+<% end %>
 
 <%= render "form", post: @post %>
