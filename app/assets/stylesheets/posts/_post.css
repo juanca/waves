@@ -1,40 +1,28 @@
 .posts__post__container {
-  display: grid;
-  grid-template-areas:
-    "date show edit delete"
-    "message message message message"
-    "comments comments comments comments";
-  grid-template-columns: 1fr auto auto;
+  display: flex;
+  flex-direction: column;
   width: 50ch;
 }
 
-.posts__post__date {
+.posts__post__header {
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 20%);
   display: flex;
-  grid-area: date;
   padding-left: 0.5rem;
 }
 
-.posts__post__show_link {
-  grid-area: show;
-}
-
-.posts__post__edit_link {
-  grid-area: edit;
-}
-
-.posts__post__delete_link {
-  grid-area: delete;
+.posts__post__date {
+  flex-grow: 1;
 }
 
 .posts__post__message {
-  grid-area: message;
   margin: 0;
   padding: 0.5rem;
 }
 
-.posts__post__comments {
+.posts__post__footer {
+  align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 20%);
-  grid-area: comments;
-  padding: 0 0.5rem;
+  display: flex;
+  padding-left: 0.5rem;
 }
