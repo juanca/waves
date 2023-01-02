@@ -8,11 +8,11 @@
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 20%);
   display: flex;
-  padding-left: 0.5rem;
 }
 
 .posts__post__date {
   flex-grow: 1;
+  margin-left: 0.5rem;
 }
 
 .posts__post__message {
@@ -24,5 +24,9 @@
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 20%);
   display: flex;
-  padding-left: 0.5rem;
+  justify-content: space-between;
+}
+
+.posts__post__comments_count {
+  margin: 0 0.5rem;
 }
