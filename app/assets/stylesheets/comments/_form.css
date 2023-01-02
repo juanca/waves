@@ -3,7 +3,10 @@
 }
 
 .comments__form__message {
+  border-radius: 5px;
   box-sizing: border-box;
+  font: unset;
+  padding: 0.5rem;
   resize: none;
   width: 100%;
 }
