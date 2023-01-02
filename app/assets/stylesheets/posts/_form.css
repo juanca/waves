@@ -1,33 +1,22 @@
 .posts__form__container {
   border: 1px solid black;
   border-radius: 5px;
-  display: grid;
-  grid-template-areas:
-    "date show edit delete"
-    "message message message message"
-    ". . . .";
-  grid-template-columns: 1fr auto auto;
+  display: flex;
+  flex-direction: column;
   margin: 0.5rem 0;
   width: 50ch;
 }
 
-.posts__form__date {
+.posts__form__header {
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 20%);
   display: flex;
-  grid-area: date;
-  padding-left: 0.5rem;
 }
 
-.posts__form__show_link {
-  grid-area: show;
-}
+.posts__form__date {
+  flex-grow: 1;
+  margin-left: 0.5rem;
 
-.posts__form__edit_link {
-  grid-area: edit;
-}
-
-.posts__form__delete_link {
-  grid-area: delete;
 }
 
 .posts__form__message {
