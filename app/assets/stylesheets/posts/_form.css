@@ -28,3 +28,19 @@
   padding: 0.5rem;
   resize: none;
 }
+
+.posts__form__footer {
+  border-top: 1px solid rgba(0, 0, 0, 20%);
+}
+
+.posts_form__reference_container {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.posts_form__reference_input {
+  border: none;
+  width: 100%;
+}
