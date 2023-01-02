@@ -28,5 +28,6 @@
 }
 
 .posts__post__comments_count {
+  flex-shrink: 0;
   margin: 0 0.5rem;
 }
