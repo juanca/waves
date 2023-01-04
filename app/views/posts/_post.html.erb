@@ -4,9 +4,7 @@
 
 <div class="posts__post__container" id="<%= dom_id post %>">
   <div class="posts__post__header">
-    <span class="posts__post__date">
-      <%= post.created_at %>
-    </span>
+    <relative-timestamp class="posts__post__date" value="<%= post.created_at %>"></relative-timestamp>
     <% unless post.new_record? %>
       <%= button_to post, form: { role: :presentation }, method: :get do %>
         <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
