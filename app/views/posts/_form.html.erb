@@ -28,7 +28,7 @@
       <% end %>
     <% end %>
   </div>
-  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__form__message", form: "post-form", oninput: "this.style.height = `${this.scrollHeight}px`" %>
+  <%= text_area_tag "post[message]", post.message, "aria-label": "Message", class: "posts__form__message", form: "post-form", is: "auto-textarea" %>
   <div class="posts__form__footer">
     <div class="posts_form__reference_container">
       <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">

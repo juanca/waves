@@ -8,6 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= yield(:stylesheets).split("\n").uniq.join("\n").html_safe %>
+    <%= javascript_include_tag "web-components/auto-textarea", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "web-components/relative-timestamp", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= yield(:javascripts).split("\n").uniq.join("\n").html_safe %>
