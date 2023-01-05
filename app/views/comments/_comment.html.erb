@@ -1,11 +1,12 @@
 <% content_for :stylesheets do %>
   <%= stylesheet_link_tag "comments/_comment", "data-turbo-track": "reload" %>
 <% end %>
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "web-components/relative-timestamp", "data-turbo-track": "reload" %>
+<% end %>
 
 <div class="comments__comment__container">
-  <span class="comments__comment__date">
-    <%= comment.created_at %>
-  </span>
+  <relative-timestamp class="comments__comment__date" value="<%= comment.created_at %>"></relative-timestamp>
   <%= button_to comment, form: { role: :presentation }, form_class: "comments__comment__delete_link", method: :delete do %>
     <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
       <title>Delete this comment</title>
