@@ -1,6 +1,9 @@
 <% content_for :stylesheets do %>
   <%= stylesheet_link_tag "posts/_form", "data-turbo-track": "reload" %>
 <% end %>
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "web-components/auto-textarea", "data-turbo-track": "reload" %>
+<% end %>
 
 <% if post.errors.any? %>
   <div style="color: red">
