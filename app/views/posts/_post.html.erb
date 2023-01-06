@@ -29,9 +29,7 @@
       <% end %>
     <% end %>
   </div>
-  <p class="posts__post__message">
-    <%= post.message %>
-  </p>
+  <p class="posts__post__message"><%= post.message %></p>
   <div class="posts__post__footer">
     <% if post.reference.present? %>
       <%= button_to post.reference, form: { role: :presentation }, method: :get do %>

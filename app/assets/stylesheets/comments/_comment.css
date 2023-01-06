@@ -22,4 +22,5 @@
   grid-area: message;
   margin: 0;
   padding: 0.5rem;
+  white-space: pre-wrap;
 }
