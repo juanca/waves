@@ -44,7 +44,7 @@ class RelativeTimestamp extends HTMLElement {
 
   connectedCallback() {
     const timestamp = this.getAttribute('value');
-    this.innerText = fromNow(timestamp);
+    if (timestamp !== '') this.innerText = fromNow(timestamp);
   }
 }
 
