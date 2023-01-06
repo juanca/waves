@@ -3,6 +3,7 @@
 <% end %>
 <% content_for :javascripts do %>
   <%= javascript_include_tag "web-components/auto-textarea", "data-turbo-track": "reload" %>
+  <%= javascript_include_tag "web-components/relative-timestamp", "data-turbo-track": "reload" %>
 <% end %>
 
 <% if post.errors.any? %>
@@ -19,9 +20,7 @@
 
 <div class="posts__form__container" id="<%= dom_id post %>">
   <div class="posts__form__header">
-    <span class="posts__form__date">
-      <%= post.created_at %>
-    </span>
+    <relative-timestamp class="posts__form__date" value="<%= post.created_at %>"></relative-timestamp>
     <% unless post.new_record? %>
       <%= button_to post, form: { role: :presentation }, method: :delete do %>
         <svg height="1rem" viewBox="0 0 24 24" width="1rem" xmlns="http://www.w3.org/2000/svg">
